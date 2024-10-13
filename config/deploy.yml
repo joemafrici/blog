@@ -7,7 +7,7 @@ image: gojoe2/blog
 # Deploy to these servers.
 servers:
   web:
-    - blog.gojoe.dev
+    - gojoe
   # job:
   #   hosts:
   #     - 192.168.0.1
@@ -16,7 +16,7 @@ servers:
 # Enable SSL auto certification via Let's Encrypt (and allow for multiple apps on one server).
 # Set ssl: false if using something like Cloudflare to terminate SSL (but keep host!).
 proxy:
-  ssl: true
+  ssl: false
   host: blog.gojoe.dev
 
 # Credentials for your image host.
@@ -72,7 +72,7 @@ asset_path: /rails/public/assets
 
 # Configure the image builder.
 builder:
-  arch: amd64
+  arch: arm64
 
   # # Build image via remote server (useful for faster amd64 builds on arm64 computers)
   # remote: ssh://docker@docker-builder-server
@@ -86,7 +86,7 @@ builder:
 
 # Use a different ssh user than root
 ssh:
-   user: ubuntu
+   user: deepwater
 
 # Use accessory services (secrets come from .kamal/secrets).
 # accessories:
