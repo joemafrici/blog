@@ -14,9 +14,11 @@
 
   <div id="posts" class="min-w-full ">
       <% @posts.each do |post| %>
-        <div class="border-solid border-2 rounded my-2 shadow-sm">
-          <%= render post %>
-        </div>
+          <div class="border-solid border-2 rounded my-2 shadow-sm">
+            <%= link_to post, class: "w-full" do %>
+              <%= render post %>
+            <% end %>
+          </div>
       <% end %>
   </div>
 </div>
