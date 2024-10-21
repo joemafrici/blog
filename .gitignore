@@ -38,3 +38,7 @@
 
 # MacOS file
 .DS_Store
+
+/config/credentials/production.key
+
+/config/credentials/development.key
