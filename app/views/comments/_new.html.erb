@@ -1,5 +1,7 @@
 <%= form_with model: [ post, Comment.new ] do |form| %>
   Your comment:<br>
+  <%= form.label "From" %>
+  <%= form.text_field :from %>
   <%= form.text_area :content, size: "20x5" %>
   <%= form.submit class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
 <% end %>
