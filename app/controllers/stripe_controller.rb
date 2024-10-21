@@ -3,7 +3,7 @@ class StripeController < ApplicationController
   def checkout
     session = Stripe::Checkout::Session.create({
                line_items: [ {
-                               price: "price_1QCC5CLGzLJRPfWyE962Tq7f",
+                               price: "price_1QCDZcLGzLJRPfWyugtjfcUr",
                                quantity: 1
                              } ],
                mode: "payment",
