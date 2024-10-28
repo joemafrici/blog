@@ -1,7 +1,7 @@
 class StripeController < ApplicationController
   allow_unauthenticated_access only: %i[ checkout success ]
   def checkout
-    Stripe.api_key = Rails.application.credentials.stripe.sk
+    Stripe.api_key = Rails.application.credentials.production.stripe.sk
     session = Stripe::Checkout::Session.create({
                line_items: [ {
                                price: "price_1QCDZcLGzLJRPfWyugtjfcUr",
