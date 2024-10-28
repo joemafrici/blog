@@ -42,3 +42,4 @@
 /config/credentials/production.key
 
 /config/credentials/development.key
+/config/secret_key_base.key
