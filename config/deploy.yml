@@ -31,7 +31,7 @@ registry:
 
 # Inject ENV variables into containers (secrets come from .kamal/secrets).
 env:
-  secret:
+  secret_key_base:
     - RAILS_PRODUCTION_KEY
   clear:
     RAILS_ENV: production
