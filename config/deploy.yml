@@ -31,8 +31,9 @@ registry:
 
 # Inject ENV variables into containers (secrets come from .kamal/secrets).
 env:
-  secret_key_base:
+  secret:
     - RAILS_PRODUCTION_KEY
+    - SECRET_KEY_BASE
   clear:
     RAILS_ENV: production
     # Run the Solid Queue Supervisor inside the web server's Puma process to do jobs.
