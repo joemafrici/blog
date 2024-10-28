@@ -1,6 +1,6 @@
 class CommentsController < ApplicationController
   before_action :set_post
-  allow_unauthenticated_access only: %i[ create ]
+  # allow_unauthenticated_access only: %i[ create ]
 
   def create
     comment = @post.comments.create! params.require(:comment).permit(:content, :from)
