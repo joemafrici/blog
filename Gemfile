@@ -64,4 +64,4 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "stripe", "~> 13.0"
+gem "stripe", "~> 13.2"
